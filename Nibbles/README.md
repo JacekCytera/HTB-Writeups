@@ -1,14 +1,3 @@
----
-title: Nibbles
-author: Jacek Cytera
-geometry: margin=2cm
-
----
-
-\tableofcontents
-\pagebreak
-        
-
 # Recon
 
 Found open port with ssh(22) and http(80)
