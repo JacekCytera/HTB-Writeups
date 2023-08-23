@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sun May  7 15:23:09 2023 as: nmap -p- --min-rate 10000 -oA scans/nmap-alltcp 10.10.11.139
+Host: 10.10.11.139 ()	Status: Up
+Host: 10.10.11.139 ()	Ports: 22/open/tcp//ssh///, 5000/open/tcp//upnp///
+# Nmap done at Sun May  7 15:23:39 2023 -- 1 IP address (1 host up) scanned in 30.21 seconds

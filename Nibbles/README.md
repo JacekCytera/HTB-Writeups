@@ -63,13 +63,13 @@ After accessing admin.php file and some tries, it was possible to guess admin cr
 login: admin
 password: nibbles
 
-![](src/1.jpg)
+![](images/1.jpg)
 
 Server has vulnerable version of nibbles blog (4.0.3).
 That means it is possible to upload arbitrary .php file on it, and execute it's contents.
 This can be done via plugins menu:
 
-![](src/2.jpg)
+![](images/2.jpg)
 
 We create simple reverse-shell payload:
 

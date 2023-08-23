@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sun May 28 21:05:11 2023 as: nmap -p 22,80,9091 -sVC --min-rate 10000 -oA scans/nmap-tcpdetail 10.10.11.194
+Host: 10.10.11.194 (soccer.htb)	Status: Up
+Host: 10.10.11.194 (soccer.htb)	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/, 9091/open/tcp//xmltec-xmlmail?///
+# Nmap done at Sun May 28 21:05:30 2023 -- 1 IP address (1 host up) scanned in 19.05 seconds

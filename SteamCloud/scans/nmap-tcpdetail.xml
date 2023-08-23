@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri May  5 10:59:34 2023 as: nmap -p 22,2379,2380,8443,10249,10250,10256 -sCV -oA scans/nmap-tcpdetail 10.10.11.133 -->
+<nmaprun scanner="nmap" args="nmap -p 22,2379,2380,8443,10249,10250,10256 -sCV -oA scans/nmap-tcpdetail 10.10.11.133" start="1683277174" startstr="Fri May  5 10:59:34 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="7" services="22,2379-2380,8443,10249-10250,10256"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1683277175" endtime="1683277277"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.11.133" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.9p1 Debian 10+deb10u2" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 fcfb90ee7c73a1d4bf87f871e844c63c (RSA)&#xa;  256 46832b1b01db71646a3e27cb536f81a1 (ECDSA)&#xa;  256 1d8dd341f3ffa437e8ac780889c2e3c5 (ED25519)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQCu4TNCZjLe74tZ0HyspkMaghndsvuXkZJa4lJBt9arqgkm6u2HI/RRdwbjE14au2u/YF89y23Q55iOGraA+9JjpyTzDPo3kxE/RisYzJaUDmzza+hqEeyTxXkZby9+DAhKm5UXs7M2CMDr3cwOPPQ96u/zUX0gDG3CfYw4fAi2TDGa6jU5KmGzIQz6SQR3Bv6IYLDwzNJ0nHNZ3jxSbFS3SsmTwK749GJLrv62wAf4uUL/Ihynl8cCG5aor6T0Fk44v/9ndfujznBvWaMYVPpf9B49XlD7OhXB5pCK2nPZrdze+ch6yhAM/vYrYA4sNk3IuFG3OCrDkVeUJn5sJKx5</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">fcfb90ee7c73a1d4bf87f871e844c63c</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHVj7iKnl8SWdGz6J4F3kvpZjM1Tim0iHlUnQByS8xJYnfwttLxVwGb+aaGbRhOJu4mq9y4crwFh50rC9mAEHWo=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">46832b1b01db71646a3e27cb536f81a1</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIHXIZpU9XbtZ2zvx8rFEYTfGp+8JCJx5lSiRNEcqUFG8</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">1d8dd341f3ffa437e8ac780889c2e3c5</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="2379"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="etcd-client" tunnel="ssl" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2"><elem>h2</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=steamcloud&#xa;Subject Alternative Name: DNS:localhost, DNS:steamcloud, IP Address:10.10.11.133, IP Address:127.0.0.1, IP Address:0:0:0:0:0:0:0:1&#xa;Not valid before: 2023-05-05T08:33:16&#xa;Not valid after:  2024-05-04T08:33:16"><table key="subject">
+<elem key="commonName">steamcloud</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">etcd-ca</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E51F789007C160B684C6B6634840B27C4F01E78B67F03AE3EDA73300CB3F6E5193BEAE07DF2D4620A50502066253298AEC5D642FD9FE755FE24806B1118A09957112A376FA58A38F4E1C0F6A7A71959E9A2A251BDE054563DFC1D33BD08FD484A202DA74A597CF9D7F5AF690D7B03179EF256B5431B3C01D98DDD2BB99C71D7317A939D4502EE472701FD96F564AA97B815B354F9F81D92352DE7688ED753E015A6D5B426EEA221E2E97D83EABC7AEAB17365E1AB62185F89C5D3C29A16DEC59965FF110F22E0594D8E108FF6DE697EFE6B70B8115C4D12A8AD852F758C5EA736BAAD3A81C2A834E86164DC322E523A5954FA3DD7F6DEBFBC4A82D718449DF87</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:BD:CB:F9:FE:85:A3:8F:74:23:3C:7E:CC:BE:0F:B1:E1:47:42:66:E6&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:localhost, DNS:steamcloud, IP Address:10.10.11.133, IP Address:127.0.0.1, IP Address:0:0:0:0:0:0:0:1</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-05T08:33:16</elem>
+<elem key="notAfter">2024-05-04T08:33:16</elem>
+</table>
+<elem key="md5">167dc6a85041ab89b0a233e2622af78b</elem>
+<elem key="sha1">1e76e10f801f7856eeb66649f5b177d032620340</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDSzCCAjOgAwIBAgIIf+gdYQWsAAQwDQYJKoZIhvcNAQELBQAwEjEQMA4GA1UE&#xa;AxMHZXRjZC1jYTAeFw0yMzA1MDUwODMzMTZaFw0yNDA1MDQwODMzMTZaMBUxEzAR&#xa;BgNVBAMTCnN0ZWFtY2xvdWQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB&#xa;AQDlH3iQB8FgtoTGtmNIQLJ8TwHni2fwOuPtpzMAyz9uUZO+rgffLUYgpQUCBmJT&#xa;KYrsXWQv2f51X+JIBrERigmVcRKjdvpYo49OHA9qenGVnpoqJRveBUVj38HTO9CP&#xa;1ISiAtp0pZfPnX9a9pDXsDF57yVrVDGzwB2Y3dK7mccdcxepOdRQLuRycB/Zb1ZK&#xa;qXuBWzVPn4HZI1LedojtdT4BWm1bQm7qIh4ul9g+q8euqxc2Xhq2IYX4nF08KaFt&#xa;7FmWX/EQ8i4FlNjhCP9t5pfv5rcLgRXE0SqK2FL3WMXqc2uq06gcKoNOhhZNwyLl&#xa;I6WVT6Pdf23r+8SoLXGESd+HAgMBAAGjgaEwgZ4wDgYDVR0PAQH/BAQDAgWgMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB8GA1Ud&#xa;IwQYMBaAFL3L+f6Fo490Izx+zL4PseFHQmbmMD4GA1UdEQQ3MDWCCWxvY2FsaG9z&#xa;dIIKc3RlYW1jbG91ZIcECgoLhYcEfwAAAYcQAAAAAAAAAAAAAAAAAAAAATANBgkq&#xa;hkiG9w0BAQsFAAOCAQEAkV384GbcgSBPzc1ka1spJVlh+Qjt45B3Xm23yL+zCVKm&#xa;eajKTv2bLIcDxApXo2kPrA//f8aea5MEWf7y8HFHAO1lf6T423snmhwuHpN43O//&#xa;YKnTjt4uu1uPctOV36/0ED4R1BC1HowRDYPmo+D94qIHldIHh9UloqFLnS84PqZW&#xa;QkHv+f/RQN34WLXsKo27ZvmvyOpTN1h3YWX6qO7/iAZrKQQGuVKusR6nrIeikpIF&#xa;CXKGisjhLVgjISwVkalLvlx7TPe6sZDhu6J6BsMUVXwnw/OHYX0RVPYtoEL60BKi&#xa;lzM1Awak5LhIrJDzDD9lsFxiK/ZoWjej7BhUrbfgcA==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="2380"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="etcd-server" tunnel="ssl" method="table" conf="3"/><script id="tls-alpn" output="&#xa;  h2"><elem>h2</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="ssl-cert" output="Subject: commonName=steamcloud&#xa;Subject Alternative Name: DNS:localhost, DNS:steamcloud, IP Address:10.10.11.133, IP Address:127.0.0.1, IP Address:0:0:0:0:0:0:0:1&#xa;Not valid before: 2023-05-05T08:33:16&#xa;Not valid after:  2024-05-04T08:33:16"><table key="subject">
+<elem key="commonName">steamcloud</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">etcd-ca</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">C97DF334FA09A153A6B9E3ADCD0E89850EA755C8C579A6BD120A8BFBD760DC062B95432C5510240E00F1BFDBD2B7B6D6025F9ED9B1C034D23B7AEF8C8DE7EFD181D86D295BCA87896EE58B5DF59269912D66DE65E84BA6BBEA4436D990857A0CC3CBA25814CCE57211A6629AF0FA08ADD9E175771884D8023F80ED1ED74F67CEF4BCFEBD2E1273220F9EB438404ABD469E9B141A59881601B60329B0DD05DFB4D5626F9F88C21DDC456B4FDA898406674FF9B438F492B5F4F2EA81AC69ED63BAAEE43AFDE10B27570E5AA075F08F189A63941731C517848D62B5FF8924F606FE1B427EFD8EAEF04DEF3DDB270CD1F29A5CB0E02F0FC42A52AA64597B432E3CAB</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:BD:CB:F9:FE:85:A3:8F:74:23:3C:7E:CC:BE:0F:B1:E1:47:42:66:E6&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:localhost, DNS:steamcloud, IP Address:10.10.11.133, IP Address:127.0.0.1, IP Address:0:0:0:0:0:0:0:1</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-05T08:33:16</elem>
+<elem key="notAfter">2024-05-04T08:33:16</elem>
+</table>
+<elem key="md5">e54a2d453fac63b8e0dd57089171e5d4</elem>
+<elem key="sha1">04c43501effa4b0e31512d75e14583e73e967d37</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDSzCCAjOgAwIBAgIIPSSau622nwwwDQYJKoZIhvcNAQELBQAwEjEQMA4GA1UE&#xa;AxMHZXRjZC1jYTAeFw0yMzA1MDUwODMzMTZaFw0yNDA1MDQwODMzMTZaMBUxEzAR&#xa;BgNVBAMTCnN0ZWFtY2xvdWQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB&#xa;AQDJffM0+gmhU6a5463NDomFDqdVyMV5pr0SCov712DcBiuVQyxVECQOAPG/29K3&#xa;ttYCX57ZscA00jt674yN5+/RgdhtKVvKh4lu5Ytd9ZJpkS1m3mXoS6a76kQ22ZCF&#xa;egzDy6JYFMzlchGmYprw+git2eF1dxiE2AI/gO0e109nzvS8/r0uEnMiD560OEBK&#xa;vUaemxQaWYgWAbYDKbDdBd+01WJvn4jCHdxFa0/aiYQGZ0/5tDj0krX08uqBrGnt&#xa;Y7qu5Dr94QsnVw5aoHXwjxiaY5QXMcUXhI1itf+JJPYG/htCfv2OrvBN7z3bJwzR&#xa;8ppcsOAvD8QqUqpkWXtDLjyrAgMBAAGjgaEwgZ4wDgYDVR0PAQH/BAQDAgWgMB0G&#xa;A1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcDAjAMBgNVHRMBAf8EAjAAMB8GA1Ud&#xa;IwQYMBaAFL3L+f6Fo490Izx+zL4PseFHQmbmMD4GA1UdEQQ3MDWCCWxvY2FsaG9z&#xa;dIIKc3RlYW1jbG91ZIcECgoLhYcEfwAAAYcQAAAAAAAAAAAAAAAAAAAAATANBgkq&#xa;hkiG9w0BAQsFAAOCAQEAqZGe3NoUz2RMEiDKMzdZtKJxE3u45TgEYINhxL/tvDeX&#xa;OwbaSlAiDhbOZmIEnzrTB+51SOcn/XBSuBUCTEaEcCmCAcm8JF3WudRBuIHoc1lw&#xa;RtpHdX5WHgEDIBy0SAviqjWFKcx5qbBnfA5Lh5w1bIT0eEwWzbdEuL7WIcR0GtbX&#xa;C2viheZotwTgMB9mwU4Nc3o+c64N2midAIRRotbcRrDXp1Zu8M0Lu/U8lS+sgYSI&#xa;OiGrefv//4ZacfUKBBro39OJcv1YpcUh1t1hntDHgWa4JMMicrqBNQiFE2Q7t8c3&#xa;ZP6pYJgrEm70yhEtZk7rmm7gnBxUOIESNE72bvUmtw==&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script></port>
+<port protocol="tcp" portid="8443"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="https-alt" servicefp="SF-Port8443-TCP:V=7.93%T=SSL%I=7%D=5/5%Time=6454C583%P=x86_64-pc-linux-gnu%r(GetRequest,22F,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nAudit-Id:\x204ae44f55-d576-4d66-8448-7f524c53aecd\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20application/json\r\nX-Content-Type-Options:\x20nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid:\x20bddec925-d433-4c0d-a577-039d4fc4def4\r\nX-Kubernetes-Pf-Prioritylevel-Uid:\x2016bf18e8-a756-4e99-abe5-9c3e52ba2de5\r\nDate:\x20Fri,\x2005\x20May\x202023\x2009:01:34\x20GMT\r\nContent-Length:\x20185\r\n\r\n{\&quot;kind\&quot;:\&quot;Status\&quot;,\&quot;apiVersion\&quot;:\&quot;v1\&quot;,\&quot;metadata\&quot;:{},\&quot;status\&quot;:\&quot;Failure\&quot;,\&quot;message\&quot;:\&quot;forbidden:\x20User\x20\\\&quot;system:anonymous\\\&quot;\x20cannot\x20get\x20path\x20\\\&quot;/\\\&quot;\&quot;,\&quot;reason\&quot;:\&quot;Forbidden\&quot;,\&quot;details\&quot;:{},\&quot;code\&quot;:403}\n&quot;)%r(HTTPOptions,233,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nAudit-Id:\x204e52e31a-fe38-44b8-b530-c4d2422cff9e\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20application/json\r\nX-Content-Type-Options:\x20nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid:\x20bddec925-d433-4c0d-a577-039d4fc4def4\r\nX-Kubernetes-Pf-Prioritylevel-Uid:\x2016bf18e8-a756-4e99-abe5-9c3e52ba2de5\r\nDate:\x20Fri,\x2005\x20May\x202023\x2009:01:35\x20GMT\r\nContent-Length:\x20189\r\n\r\n{\&quot;kind\&quot;:\&quot;Status\&quot;,\&quot;apiVersion\&quot;:\&quot;v1\&quot;,\&quot;metadata\&quot;:{},\&quot;status\&quot;:\&quot;Failure\&quot;,\&quot;message\&quot;:\&quot;forbidden:\x20User\x20\\\&quot;system:anonymous\\\&quot;\x20cannot\x20options\x20path\x20\\\&quot;/\\\&quot;\&quot;,\&quot;reason\&quot;:\&quot;Forbidden\&quot;,\&quot;details\&quot;:{},\&quot;code\&quot;:403}\n&quot;)%r(FourOhFourRequest,24A,&quot;HTTP/1\.0\x20403\x20Forbidden\r\nAudit-Id:\x20a680155c-edaf-451b-9375-c5dd7528b21c\r\nCache-Control:\x20no-cache,\x20private\r\nContent-Type:\x20application/json\r\nX-Content-Type-Options:\x20nosniff\r\nX-Kubernetes-Pf-Flowschema-Uid:\x20bddec925-d433-4c0d-a577-039d4fc4def4\r\nX-Kubernetes-Pf-Prioritylevel-Uid:\x2016bf18e8-a756-4e99-abe5-9c3e52ba2de5\r\nDate:\x20Fri,\x2005\x20May\x202023\x2009:01:35\x20GMT\r\nContent-Length:\x20212\r\n\r\n{\&quot;kind\&quot;:\&quot;Status\&quot;,\&quot;apiVersion\&quot;:\&quot;v1\&quot;,\&quot;metadata\&quot;:{},\&quot;status\&quot;:\&quot;Failure\&quot;,\&quot;message\&quot;:\&quot;forbidden:\x20User\x20\\\&quot;system:anonymous\\\&quot;\x20cannot\x20get\x20path\x20\\\&quot;/nice\x20ports,/Trinity\.txt\.bak\\\&quot;\&quot;,\&quot;reason\&quot;:\&quot;Forbidden\&quot;,\&quot;details\&quot;:{},\&quot;code\&quot;:403}\n&quot;);" tunnel="ssl" method="probed" conf="10"/><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-cert" output="Subject: commonName=minikube/organizationName=system:masters&#xa;Subject Alternative Name: DNS:minikubeCA, DNS:control-plane.minikube.internal, DNS:kubernetes.default.svc.cluster.local, DNS:kubernetes.default.svc, DNS:kubernetes.default, DNS:kubernetes, DNS:localhost, IP Address:10.10.11.133, IP Address:10.96.0.1, IP Address:127.0.0.1, IP Address:10.0.0.1&#xa;Not valid before: 2023-05-04T08:33:13&#xa;Not valid after:  2026-05-04T08:33:13"><table key="subject">
+<elem key="commonName">minikube</elem>
+<elem key="organizationName">system:masters</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">minikubeCA</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">E0EBDA8B0AF6BEE54433D2F41515B7BBC8AB240D5BD6F4850812C949F77931C5ECEA87868EF0DE88B96B3063DBB9D7A1C26445EA7F7CB8AB08D30255FEE193B961E09CC0496CC4D9E0D2783AECCBB2E9FD7D68AD2BAED6BFCBAD9CB0276819235B00F5F9F098BC7162D26DB23B172B5DE56DDBCB5DE104571BA962862F76B92C1DFF19360EEDF1A11C74D819FA76829B827E99604B68FD9A778EADF17402945356D3212C0E4E36849BB39DEC8CA83223349F0EB0C1D8EFB5A3E8237C4163C555A97966D581D29654BDE1EACC6DAB2B085F71F9F5992A7640E1268BD1F031AB2EBFB53F2DF97F3649DDC866EB7A23284904EDF779F59E0C24D2220048A1326C8B</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, TLS Web Client Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:A9:44:A0:84:29:B5:6D:46:C6:04:19:1C:32:69:57:A8:9C:17:4C:0A&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:minikubeCA, DNS:control-plane.minikube.internal, DNS:kubernetes.default.svc.cluster.local, DNS:kubernetes.default.svc, DNS:kubernetes.default, DNS:kubernetes, DNS:localhost, IP Address:10.10.11.133, IP Address:10.96.0.1, IP Address:127.0.0.1, IP Address:10.0.0.1</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-04T08:33:13</elem>
+<elem key="notAfter">2026-05-04T08:33:13</elem>
+</table>
+<elem key="md5">4ee7fb6ccbf3e928515ef390fb3b83d2</elem>
+<elem key="sha1">00b8ac30ed501fd7535925d147a7bd1c632e2f6f</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIID3DCCAsSgAwIBAgIBAjANBgkqhkiG9w0BAQsFADAVMRMwEQYDVQQDEwptaW5p&#xa;a3ViZUNBMB4XDTIzMDUwNDA4MzMxM1oXDTI2MDUwNDA4MzMxM1owLDEXMBUGA1UE&#xa;ChMOc3lzdGVtOm1hc3RlcnMxETAPBgNVBAMTCG1pbmlrdWJlMIIBIjANBgkqhkiG&#xa;9w0BAQEFAAOCAQ8AMIIBCgKCAQEA4Ovaiwr2vuVEM9L0FRW3u8irJA1b1vSFCBLJ&#xa;Sfd5McXs6oeGjvDeiLlrMGPbudehwmRF6n98uKsI0wJV/uGTuWHgnMBJbMTZ4NJ4&#xa;OuzLsun9fWitK67Wv8utnLAnaBkjWwD1+fCYvHFi0m2yOxcrXeVt28td4QRXG6li&#xa;hi92uSwd/xk2Du3xoRx02Bn6doKbgn6ZYEto/Zp3jq3xdAKUU1bTISwOTjaEm7Od&#xa;7IyoMiM0nw6wwdjvtaPoI3xBY8VVqXlm1YHSllS94erMbasrCF9x+fWZKnZA4SaL&#xa;0fAxqy6/tT8t+X82Sd3IZut6IyhJBO33efWeDCTSIgBIoTJsiwIDAQABo4IBHjCC&#xa;ARowDgYDVR0PAQH/BAQDAgWgMB0GA1UdJQQWMBQGCCsGAQUFBwMBBggrBgEFBQcD&#xa;AjAMBgNVHRMBAf8EAjAAMB8GA1UdIwQYMBaAFKlEoIQptW1GxgQZHDJpV6icF0wK&#xa;MIG5BgNVHREEgbEwga6CCm1pbmlrdWJlQ0GCH2NvbnRyb2wtcGxhbmUubWluaWt1&#xa;YmUuaW50ZXJuYWyCJGt1YmVybmV0ZXMuZGVmYXVsdC5zdmMuY2x1c3Rlci5sb2Nh&#xa;bIIWa3ViZXJuZXRlcy5kZWZhdWx0LnN2Y4ISa3ViZXJuZXRlcy5kZWZhdWx0ggpr&#xa;dWJlcm5ldGVzgglsb2NhbGhvc3SHBAoKC4WHBApgAAGHBH8AAAGHBAoAAAEwDQYJ&#xa;KoZIhvcNAQELBQADggEBAJFSbqBT+ZAAsAc6HvOyQQTuFrRNSuHcPJLzBZ4lmeDA&#xa;vXfjaFvUSwbHMgbMgEIzE96tfiJOJe8HsBVCFJAQjp5uM7mj1AjjHEttqAbRsHbZ&#xa;1/OurD7ouQqwkUrVHbEvyj2cOY2jFFnxqW/Qyn/ZWyiPVmVxaBnNcfM+vow9+/bE&#xa;wBljJZJgbhgHNVQYcgUWSAWByjf/2PTFuEVvXGvrSrzhFtE8wSa1NANTQUZkUtiX&#xa;QDCuub5P+aHdp0A1V+6FKZ5dXDlAtnJOu5aL5/4Jt8tj9G4lA7aEwZ5Vgc32yNv7&#xa;LaCeEzBQmpmneyr56A+8D+5h8jlkRmsLNa+ZBDbWsrs=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: a680155c-edaf-451b-9375-c5dd7528b21c&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: bddec925-d433-4c0d-a577-039d4fc4def4&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 16bf18e8-a756-4e99-abe5-9c3e52ba2de5&#xa;    Date: Fri, 05 May 2023 09:01:35 GMT&#xa;    Content-Length: 212&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/nice ports,/Trinity.txt.bak&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}&#xa;  GetRequest: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 4ae44f55-d576-4d66-8448-7f524c53aecd&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: bddec925-d433-4c0d-a577-039d4fc4def4&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 16bf18e8-a756-4e99-abe5-9c3e52ba2de5&#xa;    Date: Fri, 05 May 2023 09:01:34 GMT&#xa;    Content-Length: 185&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}&#xa;  HTTPOptions: &#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 4e52e31a-fe38-44b8-b530-c4d2422cff9e&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: bddec925-d433-4c0d-a577-039d4fc4def4&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 16bf18e8-a756-4e99-abe5-9c3e52ba2de5&#xa;    Date: Fri, 05 May 2023 09:01:35 GMT&#xa;    Content-Length: 189&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot options path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}"><elem key="FourOhFourRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: a680155c-edaf-451b-9375-c5dd7528b21c&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: bddec925-d433-4c0d-a577-039d4fc4def4&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 16bf18e8-a756-4e99-abe5-9c3e52ba2de5&#xa;    Date: Fri, 05 May 2023 09:01:35 GMT&#xa;    Content-Length: 212&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/nice ports,/Trinity.txt.bak&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}</elem>
+<elem key="GetRequest">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 4ae44f55-d576-4d66-8448-7f524c53aecd&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: bddec925-d433-4c0d-a577-039d4fc4def4&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 16bf18e8-a756-4e99-abe5-9c3e52ba2de5&#xa;    Date: Fri, 05 May 2023 09:01:34 GMT&#xa;    Content-Length: 185&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot get path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}</elem>
+<elem key="HTTPOptions">&#xa;    HTTP/1.0 403 Forbidden&#xa;    Audit-Id: 4e52e31a-fe38-44b8-b530-c4d2422cff9e&#xa;    Cache-Control: no-cache, private&#xa;    Content-Type: application/json&#xa;    X-Content-Type-Options: nosniff&#xa;    X-Kubernetes-Pf-Flowschema-Uid: bddec925-d433-4c0d-a577-039d4fc4def4&#xa;    X-Kubernetes-Pf-Prioritylevel-Uid: 16bf18e8-a756-4e99-abe5-9c3e52ba2de5&#xa;    Date: Fri, 05 May 2023 09:01:35 GMT&#xa;    Content-Length: 189&#xa;    {&quot;kind&quot;:&quot;Status&quot;,&quot;apiVersion&quot;:&quot;v1&quot;,&quot;metadata&quot;:{},&quot;status&quot;:&quot;Failure&quot;,&quot;message&quot;:&quot;forbidden: User &quot;system:anonymous&quot; cannot options path &quot;/&quot;&quot;,&quot;reason&quot;:&quot;Forbidden&quot;,&quot;details&quot;:{},&quot;code&quot;:403}</elem>
+</script><script id="http-title" output="Site doesn&apos;t have a title (application/json)."></script></port>
+<port protocol="tcp" portid="10249"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script></port>
+<port protocol="tcp" portid="10250"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script><script id="ssl-cert" output="Subject: commonName=steamcloud@1683275600&#xa;Subject Alternative Name: DNS:steamcloud&#xa;Not valid before: 2023-05-05T07:33:19&#xa;Not valid after:  2024-05-04T07:33:19"><table key="subject">
+<elem key="commonName">steamcloud@1683275600</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">steamcloud-ca@1683275599</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">BD2F832DC365F932D531428546E71B032F27D50A0D216E9E27D052CD9E719798E2B386A236897C77436FB85855214B912F6AD20B50CC2331AEDE0D505453DA15E2192EF97E2815278BB567D4CF349FC054F8A7F44541D57FDF8A1CC9E08542038444C25D6397B393340F3B0988DAB3DBDA21B84A830CFD1EC2CB4E3CDCC850CF1AE36CDD56AED9B3316DCED7FA7F81691DAF707FF5AA97D3F49A60037A749AC414FF164B441EB29A20740B42DE876A0973B96926340EB50824F0D9D78C2DD955D776182D9F4EA6A6B10C7A39692B5BAACE05C99016EF3C93E7B430FDDE56856DAD2AD5D569D5E51084D5C5A2FEDE5928E13023890B864AA111AE45751D333635</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:17:BA:91:F2:4E:8D:53:78:16:1C:D7:48:64:C6:69:53:E6:A3:7D:26&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:steamcloud</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2023-05-05T07:33:19</elem>
+<elem key="notAfter">2024-05-04T07:33:19</elem>
+</table>
+<elem key="md5">165b148f69df21e21eaf3c2285a380ee</elem>
+<elem key="sha1">cbdeab5b4e6521629210c618eebe0f0f9da87864</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDKzCCAhOgAwIBAgIBAjANBgkqhkiG9w0BAQsFADAjMSEwHwYDVQQDDBhzdGVh&#xa;bWNsb3VkLWNhQDE2ODMyNzU1OTkwHhcNMjMwNTA1MDczMzE5WhcNMjQwNTA0MDcz&#xa;MzE5WjAgMR4wHAYDVQQDDBVzdGVhbWNsb3VkQDE2ODMyNzU2MDAwggEiMA0GCSqG&#xa;SIb3DQEBAQUAA4IBDwAwggEKAoIBAQC9L4Mtw2X5MtUxQoVG5xsDLyfVCg0hbp4n&#xa;0FLNnnGXmOKzhqI2iXx3Q2+4WFUhS5EvatILUMwjMa7eDVBUU9oV4hku+X4oFSeL&#xa;tWfUzzSfwFT4p/RFQdV/34ocyeCFQgOERMJdY5ezkzQPOwmI2rPb2iG4SoMM/R7C&#xa;y0483MhQzxrjbN1WrtmzMW3O1/p/gWkdr3B/9aqX0/SaYAN6dJrEFP8WS0Qespog&#xa;dAtC3odqCXO5aSY0DrUIJPDZ14wt2VXXdhgtn06mprEMejlpK1uqzgXJkBbvPJPn&#xa;tDD93laFba0q1dVp1eUQhNXFov7eWSjhMCOJC4ZKoRGuRXUdMzY1AgMBAAGjbTBr&#xa;MA4GA1UdDwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAMBgNVHRMBAf8E&#xa;AjAAMB8GA1UdIwQYMBaAFBe6kfJOjVN4FhzXSGTGaVPmo30mMBUGA1UdEQQOMAyC&#xa;CnN0ZWFtY2xvdWQwDQYJKoZIhvcNAQELBQADggEBAAaskekWsQqk0nodMSpJmb/z&#xa;MSunun8cBZtOhi9pWlhCmeLEVV1jXU0gEV+c0DZxYNx4PhuQ6/ISQ07ifGxhjs+N&#xa;nx2ieldJvUvzwnehflgaPJ+0QvRpSth8gdbZNyFp/EcF3DGW2QCx7cW9tiEeH8Y5&#xa;PrIUEhjKIC+RPCFhhiKvfqGd/eGPuiGb8fEcEfd6ldqkLqIybx7HLZIsMuiXqZQn&#xa;WHXokLEzR1UwtglYokjjEoAEGGV2jWFAW7akDFmtsrKUd2RWSojppzfaaBucIE1L&#xa;LCHQ9LrJ735w1Wghvz/MG6+RlNTUtknRBJ+B7HAQPy3SGk/8dcB+Z+UR38i7noA=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="tls-alpn" output="&#xa;  h2&#xa;  http/1.1"><elem>h2</elem>
+<elem>http/1.1</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script></port>
+<port protocol="tcp" portid="10256"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Golang net/http server" extrainfo="Go-IPFS json-rpc or InfluxDB API" method="probed" conf="10"><cpe>cpe:/a:protocol_labs:go-ipfs</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/plain; charset=utf-8)."></script></port>
+</ports>
+<times srtt="55729" rttvar="7496" to="100000"/>
+</host>
+<runstats><finished time="1683277277" timestr="Fri May  5 11:01:17 2023" summary="Nmap done at Fri May  5 11:01:17 2023; 1 IP address (1 host up) scanned in 102.95 seconds" elapsed="102.95" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

@@ -1,0 +1,16 @@
+# Nmap 7.93 scan initiated Sun May  7 15:21:51 2023 as: nmap -p 22,5000 -sVC --min-rate 10000 -oA scans/nmap-tcpdetail 10.10.11.139
+Nmap scan report for 10.10.11.139
+Host is up (0.055s latency).
+
+PORT     STATE SERVICE VERSION
+22/tcp   open  ssh     OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 ea8421a3224a7df9b525517983a4f5f2 (RSA)
+|   256 b8399ef488beaa01732d10fb447f8461 (ECDSA)
+|_  256 2221e9f485908745161f733641ee3b32 (ED25519)
+5000/tcp open  http    Node.js (Express middleware)
+|_http-title: Blog
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun May  7 15:22:05 2023 -- 1 IP address (1 host up) scanned in 14.01 seconds

@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sat May  6 10:33:36 2023 as: nmap -p 22,80,8232,9093,18856,24821,34634,45794 -sCV -oA scans/nmap-tcpdetail 10.10.11.180
+Host: 10.10.11.180 ()	Status: Up
+Host: 10.10.11.180 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.4p1 Debian 5+deb11u1 (protocol 2.0)/, 80/open/tcp//http//nginx 1.23.1/, 8232/closed/tcp//hncp-dtls-port///, 9093/open/tcp//copycat?///, 18856/closed/tcp/////, 24821/closed/tcp/////, 34634/closed/tcp/////, 45794/closed/tcp/////
+# Nmap done at Sat May  6 10:35:26 2023 -- 1 IP address (1 host up) scanned in 110.51 seconds

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sun May  7 15:21:51 2023 as: nmap -p 22,5000 -sVC -&#45;min-rate 10000 -oA scans/nmap-tcpdetail 10.10.11.139 -->
+<nmaprun scanner="nmap" args="nmap -p 22,5000 -sVC -&#45;min-rate 10000 -oA scans/nmap-tcpdetail 10.10.11.139" start="1683465711" startstr="Sun May  7 15:21:51 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,5000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.139" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1683465712" endtime="1683465725"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.11.139" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.2p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.2p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 ea8421a3224a7df9b525517983a4f5f2 (RSA)&#xa;  256 b8399ef488beaa01732d10fb447f8461 (ECDSA)&#xa;  256 2221e9f485908745161f733641ee3b32 (ED25519)"><table>
+<elem key="fingerprint">ea8421a3224a7df9b525517983a4f5f2</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDZBURYGCLr4lZI1F55bUh/6vKCfmeGumtAhhNrg9lH4UNDB/wCjPbD+xovPp3UdbrOgNdqTCdZcOk5rQDyRK2YH6tq8NlP59myIQV/zXC9WQnhxn131jf/KlW78vzWaLfMU+m52e1k+YpomT5PuSMG8EhGwE5bL4o0Jb8Unafn13CJKZ1oj3awp31fRJDzYGhTjl910PROJAzlOQinxRYdUkc4ZT0qZRohNlecGVsKPpP+2Ql+gVuusUEQt7gPFPBNKw3aLtbLVTlgEW09RB9KZe6Fuh8JszZhlRpIXDf9b2O0rINAyek8etQyFFfxkDBVueZA50wjBjtgOtxLRkvfqlxWS8R75Urz8AR2Nr23AcAGheIfYPgG8HzBsUuSN5fI8jsBCekYf/ZjPA/YDM4aiyHbUWfCyjTqtAVTf3P4iqbEkw9DONGeohBlyTtEIN7pY3YM5X3UuEFIgCjlqyjLw6QTL4cGC5zBbrZml7eZQTcmgzfU6pu220wRo5GtQ3U=</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="bits">3072</elem>
+</table>
+<table>
+<elem key="fingerprint">b8399ef488beaa01732d10fb447f8461</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBJZPKXFj3JfSmJZFAHDyqUDFHLHBRBRvlesLRVAqq0WwRFbeYdKwVIVv0DBufhYXHHcUSsBRw3/on9QM24kymD0=</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="fingerprint">2221e9f485908745161f733641ee3b32</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEDIBMvrXLaYc6DXKPZaypaAv4yZ3DNLe1YaBpbpB8aY</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Node.js" extrainfo="Express middleware" method="probed" conf="10"><cpe>cpe:/a:nodejs:node.js</cpe></service><script id="http-title" output="Blog"><elem key="title">Blog</elem>
+</script></port>
+</ports>
+<times srtt="55419" rttvar="31268" to="180491"/>
+</host>
+<runstats><finished time="1683465725" timestr="Sun May  7 15:22:05 2023" summary="Nmap done at Sun May  7 15:22:05 2023; 1 IP address (1 host up) scanned in 14.01 seconds" elapsed="14.01" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

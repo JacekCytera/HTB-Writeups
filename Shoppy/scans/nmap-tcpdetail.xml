@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat May  6 10:33:36 2023 as: nmap -p 22,80,8232,9093,18856,24821,34634,45794 -sCV -oA scans/nmap-tcpdetail 10.10.11.180 -->
+<nmaprun scanner="nmap" args="nmap -p 22,80,8232,9093,18856,24821,34634,45794 -sCV -oA scans/nmap-tcpdetail 10.10.11.180" start="1683362016" startstr="Sat May  6 10:33:36 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="8" services="22,80,8232,9093,18856,24821,34634,45794"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1683362024" endtime="1683362126"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.180" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.4p1 Debian 5+deb11u1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 9e5e8351d99f89ea471a12eb81f922c0 (RSA)&#xa;  256 5857eeeb0650037c8463d7a3415b1ad5 (ECDSA)&#xa;  256 3e9d0a4290443860b3b62ce9bd9a6754 (ED25519)"><table>
+<elem key="fingerprint">9e5e8351d99f89ea471a12eb81f922c0</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDApZi3Kltv1yDHTatw6pKZfuIcoHfTnVe0W1yc9Uw7NMUinxjjQaQ731J+eCTwd8hBcZT6HQwcchDNR50Lwyp2a/KpXuH2my+2/tDvISTRTgwfMy1sDrG3+KPEzBag07m7ycshp8KhrRq0faHPrEgcagkb5T8mnT6zr3YonzoMyIpT+Q1O0JAre6GPgJc9im/tjaqhwUxCH5MxJCKQxaUf2SlGjRCH5/xEkNO20BEUYokjoAWwHUWjK2mlIrBQfd4/lcUzMnc5WT9pVBqQBw+/7LbFRyH4TLmGT9PPEr8D8iygWYpuG7WFOZlU8oOhO0+uBqZFgJFFOevq+42q42BvYYR/z+mFox+Q2lz7viSCV7nBMdcWto6USWLrx1AkVXNGeuRjr3l0r/698sQjDy5v0GnU9cMHeYkMc+TuiIaJJ5oRrSg/x53Xin1UogTnTaKLNdGkgynMqyVFklvdnUngRSLsXnwYNgcDrUhXxsfpDu8HVnzerT3q27679+n5ZFM=</elem>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+</table>
+<table>
+<elem key="fingerprint">5857eeeb0650037c8463d7a3415b1ad5</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBHiKrH/B/4murRCo5ju2KuPgkMjQN3Foh7EifMHEOwmoDNjLYBfoAFKgBnrMA9GzA+NGhHVa6L8CAxN3eaGXXMo=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+</table>
+<table>
+<elem key="fingerprint">3e9d0a4290443860b3b62ce9bd9a6754</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIBRsWhJQCRHjDkHy3HkFLMZoGqCmM3/VfMHMm56u0Ivk</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.23.1" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.23.1</cpe></service><script id="http-title" output="Did not follow redirect to http://shoppy.htb"><elem key="redirect_url">http://shoppy.htb</elem>
+</script><script id="http-server-header" output="nginx/1.23.1"><elem>nginx/1.23.1</elem>
+</script></port>
+<port protocol="tcp" portid="8232"><state state="closed" reason="conn-refused" reason_ttl="0"/><service name="hncp-dtls-port" method="table" conf="3"/></port>
+<port protocol="tcp" portid="9093"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="copycat" servicefp="SF-Port9093-TCP:V=7.93%I=7%D=5/6%Time=645610F9%P=x86_64-pc-linux-gnu%r(GenericLines,67,&quot;HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Type:\x20text/plain;\x20charset=utf-8\r\nConnection:\x20close\r\n\r\n400\x20Bad\x20Request&quot;)%r(GetRequest,1A60,&quot;HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20version=0\.0\.4;\x20charset=utf-8\r\nDate:\x20Sat,\x2006\x20May\x202023\x2008:35:50\x20GMT\r\n\r\n#\x20HELP\x20go_gc_cycles_automatic_gc_cycles_total\x20Count\x20of\x20completed\x20GC\x20cycles\x20generated\x20by\x20the\x20Go\x20runtime\.\n#\x20TYPE\x20go_gc_cycles_automatic_gc_cycles_total\x20counter\ngo_gc_cycles_automatic_gc_cycles_total\x2024\n#\x20HELP\x20go_gc_cycles_forced_gc_cycles_total\x20Count\x20of\x20completed\x20GC\x20cycles\x20forced\x20by\x20the\x20application\.\n#\x20TYPE\x20go_gc_cycles_forced_gc_cycles_total\x20counter\ngo_gc_cycles_forced_gc_cycles_total\x200\n#\x20HELP\x20go_gc_cycles_total_gc_cycles_total\x20Count\x20of\x20all\x20completed\x20GC\x20cycles\.\n#\x20TYPE\x20go_gc_cycles_total_gc_cycles_total\x20counter\ngo_gc_cycles_total_gc_cycles_total\x2024\n#\x20HELP\x20go_gc_duration_seconds\x20A\x20summary\x20of\x20the\x20pause\x20duration\x20of\x20garbage\x20collection\x20cycles\.\n#\x20TYPE\x20go_gc_duration_seconds\x20summary\ngo_gc_duration_seconds{quantile=\&quot;0\&quot;}\x201\.7844e-05\ngo_gc_duration_seconds{quantile=\&quot;0\.25\&quot;}\x208\.6212e-05\ngo_gc_d&quot;)%r(HTTPOptions,2A60,&quot;HTTP/1\.0\x20200\x20OK\r\nContent-Type:\x20text/plain;\x20version=0\.0\.4;\x20charset=utf-8\r\nDate:\x20Sat,\x2006\x20May\x202023\x2008:35:50\x20GMT\r\n\r\n#\x20HELP\x20go_gc_cycles_automatic_gc_cycles_total\x20Count\x20of\x20completed\x20GC\x20cycles\x20generated\x20by\x20the\x20Go\x20runtime\.\n#\x20TYPE\x20go_gc_cycles_automatic_gc_cycles_total\x20counter\ngo_gc_cycles_automatic_gc_cycles_total\x2024\n#\x20HELP\x20go_gc_cycles_forced_gc_cycles_total\x20Count\x20of\x20completed\x20GC\x20cycles\x20forced\x20by\x20the\x20application\.\n#\x20TYPE\x20go_gc_cycles_forced_gc_cycles_total\x20counter\ngo_gc_cycles_forced_gc_cycles_total\x200\n#\x20HELP\x20go_gc_cycles_total_gc_cycles_total\x20Count\x20of\x20all\x20completed\x20GC\x20cycles\.\n#\x20TYPE\x20go_gc_cycles_total_gc_cycles_total\x20counter\ngo_gc_cycles_total_gc_cycles_total\x2024\n#\x20HELP\x20go_gc_duration_seconds\x20A\x20summary\x20of\x20the\x20pause\x20duration\x20of\x20garbage\x20collection\x20cycles\.\n#\x20TYPE\x20go_gc_duration_seconds\x20summary\ngo_gc_duration_seconds{quantile=\&quot;0\&quot;}\x201\.7844e-05\ngo_gc_duration_seconds{quantile=\&quot;0\.25\&quot;}\x208\.6212e-05\ngo_gc_d&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  GenericLines: &#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request&#xa;  GetRequest, HTTPOptions: &#xa;    HTTP/1.0 200 OK&#xa;    Content-Type: text/plain; version=0.0.4; charset=utf-8&#xa;    Date: Sat, 06 May 2023 08:35:50 GMT&#xa;    HELP go_gc_cycles_automatic_gc_cycles_total Count of completed GC cycles generated by the Go runtime.&#xa;    TYPE go_gc_cycles_automatic_gc_cycles_total counter&#xa;    go_gc_cycles_automatic_gc_cycles_total 24&#xa;    HELP go_gc_cycles_forced_gc_cycles_total Count of completed GC cycles forced by the application.&#xa;    TYPE go_gc_cycles_forced_gc_cycles_total counter&#xa;    go_gc_cycles_forced_gc_cycles_total 0&#xa;    HELP go_gc_cycles_total_gc_cycles_total Count of all completed GC cycles.&#xa;    TYPE go_gc_cycles_total_gc_cycles_total counter&#xa;    go_gc_cycles_total_gc_cycles_total 24&#xa;    HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.&#xa;    TYPE go_gc_duration_seconds summary&#xa;    go_gc_duration_seconds{quantile=&quot;0&quot;} 1.7844e-05&#xa;    go_gc_duration_seconds{quantile=&quot;0.25&quot;} 8.6212e-05&#xa;    go_gc_d"><elem key="GenericLines">&#xa;    HTTP/1.1 400 Bad Request&#xa;    Content-Type: text/plain; charset=utf-8&#xa;    Connection: close&#xa;    Request</elem>
+<elem key="GetRequest, HTTPOptions">&#xa;    HTTP/1.0 200 OK&#xa;    Content-Type: text/plain; version=0.0.4; charset=utf-8&#xa;    Date: Sat, 06 May 2023 08:35:50 GMT&#xa;    HELP go_gc_cycles_automatic_gc_cycles_total Count of completed GC cycles generated by the Go runtime.&#xa;    TYPE go_gc_cycles_automatic_gc_cycles_total counter&#xa;    go_gc_cycles_automatic_gc_cycles_total 24&#xa;    HELP go_gc_cycles_forced_gc_cycles_total Count of completed GC cycles forced by the application.&#xa;    TYPE go_gc_cycles_forced_gc_cycles_total counter&#xa;    go_gc_cycles_forced_gc_cycles_total 0&#xa;    HELP go_gc_cycles_total_gc_cycles_total Count of all completed GC cycles.&#xa;    TYPE go_gc_cycles_total_gc_cycles_total counter&#xa;    go_gc_cycles_total_gc_cycles_total 24&#xa;    HELP go_gc_duration_seconds A summary of the pause duration of garbage collection cycles.&#xa;    TYPE go_gc_duration_seconds summary&#xa;    go_gc_duration_seconds{quantile=&quot;0&quot;} 1.7844e-05&#xa;    go_gc_duration_seconds{quantile=&quot;0.25&quot;} 8.6212e-05&#xa;    go_gc_d</elem>
+</script></port>
+<port protocol="tcp" portid="18856"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="24821"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="34634"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+<port protocol="tcp" portid="45794"><state state="closed" reason="conn-refused" reason_ttl="0"/></port>
+</ports>
+<times srtt="55375" rttvar="6037" to="100000"/>
+</host>
+<runstats><finished time="1683362126" timestr="Sat May  6 10:35:26 2023" summary="Nmap done at Sat May  6 10:35:26 2023; 1 IP address (1 host up) scanned in 110.51 seconds" elapsed="110.51" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
