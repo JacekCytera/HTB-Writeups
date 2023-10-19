@@ -45,11 +45,11 @@ Other http sites on server didn't yield any useful results when scanned for endp
 # Shell as www-data
 
 There is only one input on the page:  
-![images/site.png]()  
+![](images/site.png)  
 
 We begin by using the application as normal user would.
 After clicking "Join Now" we see the following:  
-![images/join_now.png]()  
+![](images/join_now.png)  
 
 It seems, that the site displays your username along with
 the usernames of people, who are from the same country.
@@ -105,7 +105,7 @@ we were able to make a simple Union-based SQL injection:
 username=adminek&country=' UNION select 1-- -
 ```
 
-![images/union.png]()  
+![](images/union.png)  
 
 Now, we will leverage this vulnerability to enumerate
 the database and acquire as much information as possible.
@@ -166,7 +166,7 @@ If it succeeds, we would be able to upload php webshell, and gain RCE.
 ```
 
 Despite seeing error being thrown, we still successfuly accessed our test file:
-![images/test.png]()
+![](images/test.png)
 
 Time to upload our webshell:
 ```sql
