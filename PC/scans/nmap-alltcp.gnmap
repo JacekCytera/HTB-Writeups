@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Mon May 29 22:07:35 2023 as: nmap -p- --min-rate 10000 -oA scans/nmap-alltcp -Pn 10.10.11.214
+Host: 10.10.11.214 ()	Status: Up
+Host: 10.10.11.214 ()	Ports: 22/open/tcp//ssh///, 50051/open/tcp/////	Ignored State: filtered (65533)
+# Nmap done at Mon May 29 22:07:53 2023 -- 1 IP address (1 host up) scanned in 17.77 seconds
