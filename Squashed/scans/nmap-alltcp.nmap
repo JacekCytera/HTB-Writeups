@@ -1,0 +1,15 @@
+# Nmap 7.93 scan initiated Mon Aug 21 14:51:45 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.11.191
+Nmap scan report for 10.10.11.191
+Host is up (0.064s latency).
+Not shown: 65527 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+80/tcp    open  http
+111/tcp   open  rpcbind
+2049/tcp  open  nfs
+43477/tcp open  unknown
+44955/tcp open  unknown
+45443/tcp open  unknown
+57109/tcp open  unknown
+
+# Nmap done at Mon Aug 21 14:52:11 2023 -- 1 IP address (1 host up) scanned in 26.16 seconds

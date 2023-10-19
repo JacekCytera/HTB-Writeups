@@ -1,0 +1,45 @@
+# Nmap 7.93 scan initiated Mon Aug 21 14:55:33 2023 as: nmap -p 22,80,111,2049,43477,44955,45443,57109 -sVC -oA scans/nmap-tcpdetail 10.10.11.191
+Nmap scan report for 10.10.11.191
+Host is up (0.059s latency).
+
+PORT      STATE SERVICE  VERSION
+22/tcp    open  ssh      OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   3072 48add5b83a9fbcbef7e8201ef6bfdeae (RSA)
+|   256 b7896c0b20ed49b2c1867c2992741c1f (ECDSA)
+|_  256 18cd9d08a621a8b8b6f79f8d405154fb (ED25519)
+80/tcp    open  http     Apache httpd 2.4.41 ((Ubuntu))
+|_http-title: Built Better
+|_http-server-header: Apache/2.4.41 (Ubuntu)
+111/tcp   open  rpcbind  2-4 (RPC #100000)
+| rpcinfo: 
+|   program version    port/proto  service
+|   100000  2,3,4        111/tcp   rpcbind
+|   100000  2,3,4        111/udp   rpcbind
+|   100000  3,4          111/tcp6  rpcbind
+|   100000  3,4          111/udp6  rpcbind
+|   100003  3           2049/udp   nfs
+|   100003  3           2049/udp6  nfs
+|   100003  3,4         2049/tcp   nfs
+|   100003  3,4         2049/tcp6  nfs
+|   100005  1,2,3      36934/udp   mountd
+|   100005  1,2,3      43477/tcp   mountd
+|   100005  1,2,3      50728/udp6  mountd
+|   100005  1,2,3      52741/tcp6  mountd
+|   100021  1,3,4      41999/tcp6  nlockmgr
+|   100021  1,3,4      44955/tcp   nlockmgr
+|   100021  1,3,4      51010/udp6  nlockmgr
+|   100021  1,3,4      54532/udp   nlockmgr
+|   100227  3           2049/tcp   nfs_acl
+|   100227  3           2049/tcp6  nfs_acl
+|   100227  3           2049/udp   nfs_acl
+|_  100227  3           2049/udp6  nfs_acl
+2049/tcp  open  nfs_acl  3 (RPC #100227)
+43477/tcp open  mountd   1-3 (RPC #100005)
+44955/tcp open  nlockmgr 1-4 (RPC #100021)
+45443/tcp open  mountd   1-3 (RPC #100005)
+57109/tcp open  mountd   1-3 (RPC #100005)
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Aug 21 14:55:42 2023 -- 1 IP address (1 host up) scanned in 9.57 seconds

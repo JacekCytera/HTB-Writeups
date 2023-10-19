@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Mon Aug 21 14:55:33 2023 as: nmap -p 22,80,111,2049,43477,44955,45443,57109 -sVC -oA scans/nmap-tcpdetail 10.10.11.191
+Host: 10.10.11.191 ()	Status: Up
+Host: 10.10.11.191 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.5 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.41 ((Ubuntu))/, 111/open/tcp//rpcbind//2-4 (RPC #100000)/, 2049/open/tcp//nfs_acl//3 (RPC #100227)/, 43477/open/tcp//mountd//1-3 (RPC #100005)/, 44955/open/tcp//nlockmgr//1-4 (RPC #100021)/, 45443/open/tcp//mountd//1-3 (RPC #100005)/, 57109/open/tcp//mountd//1-3 (RPC #100005)/
+# Nmap done at Mon Aug 21 14:55:42 2023 -- 1 IP address (1 host up) scanned in 9.57 seconds
