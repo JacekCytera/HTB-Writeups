@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Aug 15 12:07:20 2023 as: nmap -p 23 -sVC -oA scans/nmap-tcpdetail 10.10.11.107 -->
+<nmaprun scanner="nmap" args="nmap -p 23 -sVC -oA scans/nmap-tcpdetail 10.10.11.107" start="1692115640" startstr="Tue Aug 15 12:07:20 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="23"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1692115653" endtime="1692115818"><status state="up" reason="conn-refused" reason_ttl="0"/>
+<address addr="10.10.11.107" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="23"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="telnet" servicefp="SF-Port23-TCP:V=7.93%I=7%D=8/15%Time=64DBA2CB%P=x86_64-pc-linux-gnu%r(NULL,F,&quot;\nHP\x20JetDirect\n\n&quot;)%r(GenericLines,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(tn3270,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(GetRequest,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(HTTPOptions,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(RTSPRequest,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(RPCCheck,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(DNSVersionBindReqTCP,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(DNSStatusRequestTCP,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(Help,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(SSLSessionReq,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(TerminalServerCookie,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(TLSSessionReq,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(Kerberos,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(SMBProgNeg,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(X11Probe,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(FourOhFourRequest,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(LPDString,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(LDAPSearchReq,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(LDAPBindReq,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(SIPOptions,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(LANDesk-RC,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(TerminalServer,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(NCP,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(NotesRPC,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(JavaRMI,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(WMSRequest,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(oracle-tns,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(ms-sql-s,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(afp,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;)%r(giop,19,&quot;\nHP\x20JetDirect\n\nPassword:\x20&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, WMSRequest, X11Probe, afp, giop, ms-sql-s, oracle-tns, tn3270: &#xa;    JetDirect&#xa;    Password:&#xa;  NULL: &#xa;    JetDirect"><elem key="DNSStatusRequestTCP, DNSVersionBindReqTCP, FourOhFourRequest, GenericLines, GetRequest, HTTPOptions, Help, JavaRMI, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, RPCCheck, RTSPRequest, SIPOptions, SMBProgNeg, SSLSessionReq, TLSSessionReq, TerminalServer, TerminalServerCookie, WMSRequest, X11Probe, afp, giop, ms-sql-s, oracle-tns, tn3270">&#xa;    JetDirect&#xa;    Password:</elem>
+<elem key="NULL">&#xa;    JetDirect</elem>
+</script></port>
+</ports>
+<times srtt="60369" rttvar="45658" to="243001"/>
+</host>
+<runstats><finished time="1692115818" timestr="Tue Aug 15 12:10:18 2023" summary="Nmap done at Tue Aug 15 12:10:18 2023; 1 IP address (1 host up) scanned in 178.09 seconds" elapsed="178.09" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

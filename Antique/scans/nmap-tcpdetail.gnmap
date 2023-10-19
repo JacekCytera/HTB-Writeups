@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Tue Aug 15 12:07:20 2023 as: nmap -p 23 -sVC -oA scans/nmap-tcpdetail 10.10.11.107
+Host: 10.10.11.107 ()	Status: Up
+Host: 10.10.11.107 ()	Ports: 23/open/tcp//telnet?///
+# Nmap done at Tue Aug 15 12:10:18 2023 -- 1 IP address (1 host up) scanned in 178.09 seconds
