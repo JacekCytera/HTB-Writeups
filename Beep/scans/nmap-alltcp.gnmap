@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Wed Aug 23 02:48:43 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.10.7
+Host: 10.10.10.7 ()	Status: Up
+Host: 10.10.10.7 ()	Ports: 22/open/tcp//ssh///, 25/open/tcp//smtp///, 80/open/tcp//http///, 110/open/tcp//pop3///, 111/open/tcp//rpcbind///, 143/open/tcp//imap///, 443/open/tcp//https///, 881/open/tcp//unknown///, 993/open/tcp//imaps///, 995/open/tcp//pop3s///, 3306/open/tcp//mysql///, 4190/open/tcp//sieve///, 4445/open/tcp//upnotifyp///, 4559/open/tcp//hylafax///, 5038/open/tcp/////, 10000/open/tcp//snet-sensor-mgmt///	Ignored State: closed (65519)
+# Nmap done at Wed Aug 23 02:49:07 2023 -- 1 IP address (1 host up) scanned in 23.61 seconds

@@ -1,0 +1,23 @@
+# Nmap 7.93 scan initiated Wed Aug 23 02:48:43 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.10.7
+Nmap scan report for 10.10.10.7
+Host is up (0.030s latency).
+Not shown: 65519 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+25/tcp    open  smtp
+80/tcp    open  http
+110/tcp   open  pop3
+111/tcp   open  rpcbind
+143/tcp   open  imap
+443/tcp   open  https
+881/tcp   open  unknown
+993/tcp   open  imaps
+995/tcp   open  pop3s
+3306/tcp  open  mysql
+4190/tcp  open  sieve
+4445/tcp  open  upnotifyp
+4559/tcp  open  hylafax
+5038/tcp  open  unknown
+10000/tcp open  snet-sensor-mgmt
+
+# Nmap done at Wed Aug 23 02:49:07 2023 -- 1 IP address (1 host up) scanned in 23.61 seconds
