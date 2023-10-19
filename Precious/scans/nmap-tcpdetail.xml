@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Aug 22 06:02:45 2023 as: nmap -p 22,80 -sVC -oA scans/nmap-tcpdetail 10.10.11.189 -->
+<nmaprun scanner="nmap" args="nmap -p 22,80 -sVC -oA scans/nmap-tcpdetail 10.10.11.189" start="1692698565" startstr="Tue Aug 22 06:02:45 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.189" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1692698565" endtime="1692698573"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.189" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.4p1 Debian 5+deb11u1" extrainfo="protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.4p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  3072 845e13a8e31e20661d235550f63047d2 (RSA)&#xa;  256 a2ef7b9665ce4161c467ee4e96c7c892 (ECDSA)&#xa;  256 33053dcd7ab798458239e7ae3c91a658 (ED25519)"><table>
+<elem key="bits">3072</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">845e13a8e31e20661d235550f63047d2</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABgQDEAPxqUubE88njHItE+mjeWJXOLu5reIBmQHCYh2ETYO5zatgel+LjcYdgaa4KLFyw8CfDbRL9swlmGTaf4iUbao4jD73HV9/Vrnby7zP04OH3U/wVbAKbPJrjnva/czuuV6uNz4SVA3qk0bp6wOrxQFzCn5OvY3FTcceH1jrjrJmUKpGZJBZZO6cp0HkZWs/eQi8F7anVoMDKiiuP0VX28q/yR1AFB4vR5ej8iV/X73z3GOs3ZckQMhOiBmu1FF77c7VW1zqln480/AbvHJDULtRdZ5xrYH1nFynnPi6+VU/PIfVMpHbYu7t0mEFeI5HxMPNUvtYRRDC14jEtH6RpZxd7PhwYiBctiybZbonM5UP0lP85OuMMPcSMll65+8hzMMY2aejjHTYqgzd7M6HxcEMrJW7n7s5eCJqMoUXkL8RSBEQSmMUV8iWzHW0XkVUfYT5Ko6Xsnb+DiiLvFNUlFwO6hWz2WG8rlZ3voQ/gv8BLVCU1ziaVGerd61PODck=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">a2ef7b9665ce4161c467ee4e96c7c892</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBFScv6lLa14Uczimjt1W7qyH6OvXIyJGrznL1JXzgVFdABwi/oWWxUzEvwP5OMki1SW9QKX7kKVznWgFNOp815Y=</elem>
+</table>
+<table>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">33053dcd7ab798458239e7ae3c91a658</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIH+JGiTFGOgn/iJUoLhZeybUvKeADIlm0fHnP/oZ66Qb</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe></service><script id="http-server-header" output="nginx/1.18.0"><elem>nginx/1.18.0</elem>
+</script><script id="http-title" output="Did not follow redirect to http://precious.htb/"><elem key="redirect_url">http://precious.htb/</elem>
+</script></port>
+</ports>
+<times srtt="31180" rttvar="17717" to="102048"/>
+</host>
+<runstats><finished time="1692698573" timestr="Tue Aug 22 06:02:53 2023" summary="Nmap done at Tue Aug 22 06:02:53 2023; 1 IP address (1 host up) scanned in 7.85 seconds" elapsed="7.85" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

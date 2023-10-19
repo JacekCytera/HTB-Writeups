@@ -1,0 +1,3 @@
+200      GET       47l       89w      815c http://precious.htb/stylesheets/style.css
+200      GET       18l       42w      483c http://precious.htb/
+200      GET       18l       42w      483c http://precious.htb/%5C
