@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Sat Jul 29 11:06:55 2023 as: nmap -p 22,80 -sVC -oA scans/nmap-tcpdetail 10.10.11.203
+Host: 10.10.11.203 ()	Status: Up
+Host: 10.10.11.203 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.9p1 Ubuntu 3ubuntu0.1 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//nginx 1.18.0 (Ubuntu)/
+# Nmap done at Sat Jul 29 11:07:05 2023 -- 1 IP address (1 host up) scanned in 10.07 seconds

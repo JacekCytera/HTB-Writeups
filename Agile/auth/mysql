@@ -1,0 +1,5 @@
+superpassuser:dSA6l7q*yIVsMl6ywvgK
+superpasstester:VUO8A2c2#3FnLq3*a9DX1U@localhost/superpasstest
+
+mysql -u superpassuser -p -D superpass
+Enter password: dSA6l7q*yIVs$39Ml6ywvgK

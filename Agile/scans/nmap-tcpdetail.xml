@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Sat Jul 29 11:06:55 2023 as: nmap -p 22,80 -sVC -oA scans/nmap-tcpdetail 10.10.11.203 -->
+<nmaprun scanner="nmap" args="nmap -p 22,80 -sVC -oA scans/nmap-tcpdetail 10.10.11.203" start="1690643215" startstr="Sat Jul 29 11:06:55 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="22,80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.11.203" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1690643216" endtime="1690643225"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.11.203" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="8.9p1 Ubuntu 3ubuntu0.1" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:8.9p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  256 f4bcee21d71f1aa26572212d5ba6f700 (ECDSA)&#xa;  256 65c1480d88cbb975a02ca5e6377e5106 (ED25519)"><table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCeVL2Hl8/LXWurlu46JyqOyvUHtAwTrz1EYdY5dXVi9BfpPwsPTf+zzflV+CGdflQRNFKPDS8RJuiXQa40xs9o=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">f4bcee21d71f1aa26572212d5ba6f700</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIEcaZPDjlx21ppN0y2dNT1Jb8aPZwfvugIeN6wdUH1cK</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">65c1480d88cbb975a02ca5e6377e5106</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="nginx" version="1.18.0" extrainfo="Ubuntu" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:igor_sysoev:nginx:1.18.0</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="http-title" output="Did not follow redirect to http://superpass.htb"><elem key="redirect_url">http://superpass.htb</elem>
+</script><script id="http-server-header" output="nginx/1.18.0 (Ubuntu)"><elem>nginx/1.18.0 (Ubuntu)</elem>
+</script></port>
+</ports>
+<times srtt="55817" rttvar="31581" to="182141"/>
+</host>
+<runstats><finished time="1690643225" timestr="Sat Jul 29 11:07:05 2023" summary="Nmap done at Sat Jul 29 11:07:05 2023; 1 IP address (1 host up) scanned in 10.07 seconds" elapsed="10.07" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

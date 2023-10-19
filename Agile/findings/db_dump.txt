@@ -1,0 +1,21 @@
+select * from users;
++----+----------+--------------------------------------------------------------------------------------------------------------------------+
+| id | username | hashed_password                                                                                                          |
++----+----------+--------------------------------------------------------------------------------------------------------------------------+
+|  1 | 0xdf     | $6$rounds=200000$FRtvqJFfrU7DSyT7$8eGzz8Yk7vTVKudEiFBCL1T7O4bXl0.yJlzN0jp.q0choSIBfMqvxVIjdjzStZUYg6mSRB2Vep0qELyyr0fqF. |
+|  2 | corum    | $6$rounds=200000$yRvGjY1MIzQelmMX$9273p66QtJQb9afrbAzugxVFaBhb9lyhp62cirpxJEOfmIlCy/LILzFxsyWj/mZwubzWylr3iaQ13e4zmfFfB1 |
+|  9 | test     | $6$rounds=200000$GC8kJTXGTYtnH7y2$Bc6OC/purNHdYylVBLhEgJLo.fFRvFpBCP7RmM4lG8mGEDr0cw.56gyyWcNBO/3HHPMlNYBXN.3ofUFIr5v.g/ |
+| 10 | bob      | $6$rounds=200000$ecKM7dO7MjYMzoZX$1cOCM7a0HYsMeVrPqduEJxa1ZB/6Asuj..lf93BT3XogZjRUQE81vcAAZKVGrdwaFekRM5MapcRdU/c1QpClu1 |
+| 11 | setnix   | $6$rounds=200000$iszveiy9fi8AvMSu$VZmlXe2GSAX4XGKH/ptz4Y2.hOM/OH6jNYFL4xTNm.RwVIXQ9fHlpK37SM5IsO.a4rc2Q5b0MDIzc3.JtD05R. |
++----+----------+--------------------------------------------------------------------------------------------------------------------------+
+
+select * from passwords;
++----+---------------------+---------------------+----------------+----------+----------------------+---------+
+| id | created_date        | last_updated_data   | url            | username | password             | user_id |
++----+---------------------+---------------------+----------------+----------+----------------------+---------+
+|  3 | 2022-12-02 21:21:32 | 2022-12-02 21:21:32 | hackthebox.com | 0xdf     | 762b430d32eea2f12970 |       1 |
+|  4 | 2022-12-02 21:22:55 | 2022-12-02 21:22:55 | mgoblog.com    | 0xdf     | 5b133f7a6a1c180646cb |       1 |
+|  6 | 2022-12-02 21:24:44 | 2022-12-02 21:24:44 | mgoblog        | corum    | 47ed1e73c955de230a1d |       2 |
+|  7 | 2022-12-02 21:25:15 | 2022-12-02 21:25:15 | ticketmaster   | corum    | 9799588839ed0f98c211 |       2 |
+|  8 | 2022-12-02 21:25:27 | 2022-12-02 21:25:27 | agile          | corum    | 5db7caa1d13cc37c9fc2 |       2 |
++----+---------------------+---------------------+----------------+----------+----------------------+---------+

@@ -1,0 +1,27 @@
+FileNotFoundError
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test_export_2f5a29bc6.csv'
+
+Traceback (most recent call last)
+File "/app/venv/lib/python3.10/site-packages/flask/app.py", line 2528, in wsgi_app
+response = self.handle_exception(e)
+File "/app/venv/lib/python3.10/site-packages/flask/app.py", line 2525, in wsgi_app
+response = self.full_dispatch_request()
+File "/app/venv/lib/python3.10/site-packages/flask/app.py", line 1822, in full_dispatch_request
+rv = self.handle_user_exception(e)
+File "/app/venv/lib/python3.10/site-packages/flask/app.py", line 1820, in full_dispatch_request
+rv = self.dispatch_request()
+File "/app/venv/lib/python3.10/site-packages/flask/app.py", line 1796, in dispatch_request
+return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+File "/app/venv/lib/python3.10/site-packages/flask_login/utils.py", line 290, in decorated_view
+return current_app.ensure_sync(func)(*args, **kwargs)
+File "/app/app/superpass/views/vault_views.py", line 102, in download
+with open(f'/tmp/{fn}', 'rb') as f:
+FileNotFoundError: [Errno 2] No such file or directory: '/tmp/test_export_2f5a29bc6.csv'
+The debugger caught an exception in your WSGI application. You can now look at the traceback which led to the error.
+To switch between the interactive traceback and the plaintext one, you can click on the "Traceback" headline. From the text traceback you can also create a paste of it. For code execution mouse-over the frame you want to debug and click on the console icon on the right side.
+
+You can execute arbitrary Python code in the stack frames and there are some extra helpers available for introspection:
+
+dump() shows all variables in the frame
+dump(obj) dumps all that's known about the object
+Brought to you by DON'T PANIC, your friendly Werkzeug powered traceback interpreter.
