@@ -1,0 +1,68 @@
+301      GET        9l       28w      309c http://bashed.htb/images => http://bashed.htb/images/
+200      GET        7l       23w     1322c http://bashed.htb/images/favicon.png
+200      GET      680l     1154w    10723c http://bashed.htb/css/common.css
+200      GET      154l      394w     7477c http://bashed.htb/single.html
+200      GET       58l      254w     1783c http://bashed.htb/js/jquery.easing.1.3.js
+200      GET     1412l     2291w    24164c http://bashed.htb/style.css
+200      GET        6l     1435w    97184c http://bashed.htb/js/jquery.js
+301      GET        9l       28w      310c http://bashed.htb/uploads => http://bashed.htb/uploads/
+301      GET        9l       28w      306c http://bashed.htb/dev => http://bashed.htb/dev/
+301      GET        9l       28w      306c http://bashed.htb/css => http://bashed.htb/css/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://bashed.htb/dev (Apache)
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://bashed.htb/css (Apache)
+200      GET        1l      255w     4559c http://bashed.htb/dev/phpbash.min.php
+200      GET      216l      489w     8151c http://bashed.htb/dev/phpbash.php
+301      GET        9l       28w      306c http://bashed.htb/php => http://bashed.htb/php/
+200      GET      117l      685w     4689c http://bashed.htb/css/sm-clean.css
+200      GET       32l      116w     1222c http://bashed.htb/css/carouFredSel.css
+200      GET       96l      166w     1661c http://bashed.htb/css/clear.css
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://bashed.htb/php (Apache)
+200      GET        0l        0w        0c http://bashed.htb/php/sendMail.php
+301      GET        9l       28w      305c http://bashed.htb/js => http://bashed.htb/js/
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://bashed.htb/js (Apache)
+301      GET        9l       28w      308c http://bashed.htb/fonts => http://bashed.htb/fonts/
+200      GET       12l       63w     1392c http://bashed.htb/js/jquery.mousewheel.min.js
+200      GET      262l      560w     8904c http://bashed.htb/js/main.js
+200      GET        8l       73w     2429c http://bashed.htb/js/html5.js
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://bashed.htb/fonts (Apache)
+200      GET        3l      206w    24476c http://bashed.htb/js/jquery.smartmenus.min.js
+200      GET      893l     3885w    26643c http://bashed.htb/js/imagesloaded.pkgd.js
+200      GET       15l      672w    36079c http://bashed.htb/js/jquery.carouFredSel-6.0.0-packed.js
+200      GET      260l     1635w   130134c http://bashed.htb/fonts/fontawesome-webfont.woff2
+200      GET      390l     2094w   135959c http://bashed.htb/fonts/fontawesome-webfont.eot
+MSG      0.000 feroxbuster::heuristics detected directory listing: http://bashed.htb/images (Apache)
+200      GET        8l       35w     2447c http://bashed.htb/images/logo.png
+200      GET      161l      397w     7743c http://bashed.htb/index.html
+200      GET       13l      113w     4313c http://bashed.htb/js/jquery.touchSwipe.min.js
+200      GET        4l       66w    29063c http://bashed.htb/css/font-awesome.min.css
+200      GET      154l     1009w    73725c http://bashed.htb/images/ajax-document-loader.gif
+200      GET      310l     2069w   163622c http://bashed.htb/fonts/fontawesome-webfont.woff
+200      GET        6l       20w     1537c http://bashed.htb/images/arrow.png
+200      GET      118l      550w    60153c http://bashed.htb/js/jquery.nicescroll.min.js
+200      GET      161l      397w     7743c http://bashed.htb/
+200      GET       38l       76w      909c http://bashed.htb/js/custom_google_map_style.js
+200      GET     2588l     4636w   239531c http://bashed.htb/fonts/FontAwesome.otf
+404      GET        9l       33w      288c http://bashed.htb/external%20files
+200      GET     1304l     5478w   196149c http://bashed.htb/fonts/fontawesome-webfont.ttf
+404      GET        9l       33w      287c http://bashed.htb/Style%20Library
+404      GET        9l       33w      296c http://bashed.htb/uploads/external%20files
+200      GET      685l    57230w   391622c http://bashed.htb/fonts/fontawesome-webfont.svg
+404      GET        9l       33w      295c http://bashed.htb/uploads/Style%20Library
+404      GET        9l       33w      284c http://bashed.htb/modern%20mom
+404      GET        9l       33w      292c http://bashed.htb/uploads/modern%20mom
+404      GET        9l       33w      292c http://bashed.htb/uploads/My%20Project
+404      GET        9l       33w      284c http://bashed.htb/Contact%20Us
+404      GET        9l       33w      292c http://bashed.htb/uploads/Contact%20Us
+404      GET        9l       33w      285c http://bashed.htb/Donate%20Cash
+404      GET        9l       33w      283c http://bashed.htb/Home%20Page
+404      GET        9l       33w      288c http://bashed.htb/Press%20Releases
+404      GET        9l       33w      293c http://bashed.htb/uploads/Donate%20Cash
+404      GET        9l       33w      291c http://bashed.htb/uploads/Home%20Page
+404      GET        9l       33w      296c http://bashed.htb/uploads/Press%20Releases
+404      GET        9l       33w      290c http://bashed.htb/uploads/Site%20Map
+404      GET        9l       33w      285c http://bashed.htb/Site%20Assets
+404      GET        9l       33w      290c http://bashed.htb/uploads/About%20Us
+404      GET        9l       33w      294c http://bashed.htb/uploads/Bequest%20Gift
+404      GET        9l       34w      298c http://bashed.htb/uploads/Life%20Income%20Gift
+404      GET        9l       33w      293c http://bashed.htb/uploads/Site%20Assets
+404      GET        9l       34w      293c http://bashed.htb/uploads/What%20is%20New

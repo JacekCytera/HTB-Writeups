@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Mon Aug 14 09:45:03 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.10.68
+Host: 10.10.10.68 ()	Status: Up
+Host: 10.10.10.68 ()	Ports: 80/open/tcp//http///	Ignored State: closed (65534)
+# Nmap done at Mon Aug 14 09:45:42 2023 -- 1 IP address (1 host up) scanned in 39.71 seconds

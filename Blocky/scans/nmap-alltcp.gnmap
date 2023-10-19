@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Tue Aug 15 15:39:45 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.10.37
+Host: 10.10.10.37 ()	Status: Up
+Host: 10.10.10.37 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 8192/closed/tcp//sophos///, 25565/open/tcp//minecraft///	Ignored State: filtered (65530)
+# Nmap done at Tue Aug 15 15:41:39 2023 -- 1 IP address (1 host up) scanned in 114.46 seconds

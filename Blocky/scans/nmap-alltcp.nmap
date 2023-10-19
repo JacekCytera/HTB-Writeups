@@ -1,0 +1,12 @@
+# Nmap 7.93 scan initiated Tue Aug 15 15:39:45 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.10.37
+Nmap scan report for 10.10.10.37
+Host is up (0.066s latency).
+Not shown: 65530 filtered tcp ports (no-response)
+PORT      STATE  SERVICE
+21/tcp    open   ftp
+22/tcp    open   ssh
+80/tcp    open   http
+8192/tcp  closed sophos
+25565/tcp open   minecraft
+
+# Nmap done at Tue Aug 15 15:41:39 2023 -- 1 IP address (1 host up) scanned in 114.46 seconds

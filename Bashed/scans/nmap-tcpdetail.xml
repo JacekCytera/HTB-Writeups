@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Mon Aug 14 09:46:38 2023 as: nmap -p 80 -sVC -oA scans/nmap-tcpdetail 10.10.10.68 -->
+<nmaprun scanner="nmap" args="nmap -p 80 -sVC -oA scans/nmap-tcpdetail 10.10.10.68" start="1692020798" startstr="Mon Aug 14 09:46:38 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="1" services="80"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.68" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1692020802" endtime="1692020812"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.68" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Arrexel&apos;s Development Site"><elem key="title">Arrexel&apos;s Development Site</elem>
+</script></port>
+</ports>
+<times srtt="55993" rttvar="42411" to="225637"/>
+</host>
+<runstats><finished time="1692020812" timestr="Mon Aug 14 09:46:52 2023" summary="Nmap done at Mon Aug 14 09:46:52 2023; 1 IP address (1 host up) scanned in 14.27 seconds" elapsed="14.27" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

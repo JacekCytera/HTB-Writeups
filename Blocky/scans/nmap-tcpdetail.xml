@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Tue Aug 15 15:43:18 2023 as: nmap -p 21,22,80,25565 -sVC -oA scans/nmap-tcpdetail 10.10.10.37 -->
+<nmaprun scanner="nmap" args="nmap -p 21,22,80,25565 -sVC -oA scans/nmap-tcpdetail 10.10.10.37" start="1692128598" startstr="Tue Aug 15 15:43:18 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="4" services="21-22,80,25565"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.37" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1692128599" endtime="1692128611"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.37" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="21"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ftp" product="ProFTPD" version="1.3.5a" ostype="Unix" method="probed" conf="10"><cpe>cpe:/a:proftpd:proftpd:1.3.5a</cpe></service></port>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 d62b99b4d5e753ce2bfcb5d79d79fba2 (RSA)&#xa;  256 5d7f389570c9beac67a01e86e7978403 (ECDSA)&#xa;  256 09d5c204951a90ef87562597df837067 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDXqVh031OUgTdcXsDwffHKL6T9f1GfJ1/x/b/dywX42sDZ5m1Hz46bKmbnWa0YD3LSRkStJDtyNXptzmEp31Fs2DUndVKui3LCcyKXY6FSVWp9ZDBzlW3aY8qa+y339OS3gp3aq277zYDnnA62U7rIltYp91u5VPBKi3DITVaSgzA8mcpHRr30e3cEGaLCxty58U2/lyCnx3I0Lh5rEbipQ1G7Cr6NMgmGtW6LrlJRQiWA1OK2/tDZbLhwtkjB82pjI/0T2gpA/vlZJH0elbMXW40Et6bOs2oK/V2bVozpoRyoQuts8zcRmCViVs8B3p7T1Qh/Z+7Ki91vgicfy4fl</elem>
+<elem key="bits">2048</elem>
+<elem key="fingerprint">d62b99b4d5e753ce2bfcb5d79d79fba2</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBNgEpgEZGGbtm5suOAio9ut2hOQYLN39Uhni8i4E/Wdir1gHxDCLMoNPQXDOnEUO1QQVbioUUMgFRAXYLhilNF8=</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">5d7f389570c9beac67a01e86e7978403</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAILqVrP5vDD4MdQ2v3ozqDPxG1XXZOp5VPpVsFUROL6Vj</elem>
+<elem key="bits">256</elem>
+<elem key="fingerprint">09d5c204951a90ef87562597df837067</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" hostname="127.0.1.1" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script><script id="http-title" output="Did not follow redirect to http://blocky.htb"><elem key="redirect_url">http://blocky.htb</elem>
+</script></port>
+<port protocol="tcp" portid="25565"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="minecraft" product="Minecraft" version="1.11.2" extrainfo="Protocol: 127, Message: A Minecraft Server, Users: 0/20" method="probed" conf="10"/></port>
+</ports>
+<times srtt="59112" rttvar="18901" to="134716"/>
+</host>
+<runstats><finished time="1692128611" timestr="Tue Aug 15 15:43:31 2023" summary="Nmap done at Tue Aug 15 15:43:31 2023; 1 IP address (1 host up) scanned in 12.63 seconds" elapsed="12.63" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
