@@ -173,7 +173,7 @@ kali@kali /t/n/v/w/html> cat shell.php
 
 Back to the site, we can successfuly run commands:
 
-![](shell.png)
+![](images/shell.png)
 
 In order to get reverse shell, we tried some bash shells
 from revshells.com, but they didn't seem to work. Instead,

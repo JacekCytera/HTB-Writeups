@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Wed Aug 23 05:58:17 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.11.116
+Host: 10.10.11.116 ()	Status: Up
+Host: 10.10.11.116 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 4566/open/tcp//kwtc///, 5000/filtered/tcp//upnp///, 5001/filtered/tcp//commplex-link///, 5002/filtered/tcp//rfe///, 5003/filtered/tcp//filemaker///, 5004/filtered/tcp//avt-profile-1///, 5005/filtered/tcp//avt-profile-2///, 5006/filtered/tcp//wsm-server///, 5007/filtered/tcp//wsm-server-ssl///, 5008/filtered/tcp//synapsis-edge///, 8080/open/tcp//http-proxy///	Ignored State: closed (65522)
+# Nmap done at Wed Aug 23 05:58:39 2023 -- 1 IP address (1 host up) scanned in 22.77 seconds

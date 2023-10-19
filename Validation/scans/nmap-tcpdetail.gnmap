@@ -1,0 +1,4 @@
+# Nmap 7.93 scan initiated Wed Aug 23 06:00:14 2023 as: nmap -p 22,80,4566,8080 -sVC -oA scans/nmap-tcpdetail 10.10.11.116
+Host: 10.10.11.116 ()	Status: Up
+Host: 10.10.11.116 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.2p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)/, 80/open/tcp//http//Apache httpd 2.4.48 ((Debian))/, 4566/open/tcp//http//nginx/, 8080/open/tcp//http//nginx/
+# Nmap done at Wed Aug 23 06:00:27 2023 -- 1 IP address (1 host up) scanned in 12.97 seconds

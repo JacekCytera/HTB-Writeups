@@ -1,0 +1,20 @@
+# Nmap 7.93 scan initiated Wed Aug 23 05:58:17 2023 as: nmap -p- -oA scans/nmap-alltcp 10.10.11.116
+Nmap scan report for 10.10.11.116
+Host is up (0.031s latency).
+Not shown: 65522 closed tcp ports (conn-refused)
+PORT     STATE    SERVICE
+22/tcp   open     ssh
+80/tcp   open     http
+4566/tcp open     kwtc
+5000/tcp filtered upnp
+5001/tcp filtered commplex-link
+5002/tcp filtered rfe
+5003/tcp filtered filemaker
+5004/tcp filtered avt-profile-1
+5005/tcp filtered avt-profile-2
+5006/tcp filtered wsm-server
+5007/tcp filtered wsm-server-ssl
+5008/tcp filtered synapsis-edge
+8080/tcp open     http-proxy
+
+# Nmap done at Wed Aug 23 05:58:39 2023 -- 1 IP address (1 host up) scanned in 22.77 seconds
