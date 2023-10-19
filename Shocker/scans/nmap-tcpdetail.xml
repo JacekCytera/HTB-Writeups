@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Aug 18 06:38:08 2023 as: nmap -p 2222,80 -sVC -oA scans/nmap-tcpdetail 10.10.10.56 -->
+<nmaprun scanner="nmap" args="nmap -p 2222,80 -sVC -oA scans/nmap-tcpdetail 10.10.10.56" start="1692355088" startstr="Fri Aug 18 06:38:08 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="connect" protocol="tcp" numservices="2" services="80,2222"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.56" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1692355090" endtime="1692355097"><status state="up" reason="syn-ack" reason_ttl="0"/>
+<address addr="10.10.10.56" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="http" product="Apache httpd" version="2.4.18" extrainfo="(Ubuntu)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.18</cpe></service><script id="http-title" output="Site doesn&apos;t have a title (text/html)."></script><script id="http-server-header" output="Apache/2.4.18 (Ubuntu)"><elem>Apache/2.4.18 (Ubuntu)</elem>
+</script></port>
+<port protocol="tcp" portid="2222"><state state="open" reason="syn-ack" reason_ttl="0"/><service name="ssh" product="OpenSSH" version="7.2p2 Ubuntu 4ubuntu2.2" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.2p2</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 c4f8ade8f80477decf150d630a187e49 (RSA)&#xa;  256 228fb197bf0f1708fc7e2c8fe9773a48 (ECDSA)&#xa;  256 e6ac27a3b5a9f1123c34a55d5beb3de9 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQD8ArTOHWzqhwcyAZWc2CmxfLmVVTwfLZf0zhCBREGCpS2WC3NhAKQ2zefCHCU8XTC8hY9ta5ocU+p7S52OGHlaG7HuA5Xlnihl1INNsMX7gpNcfQEYnyby+hjHWPLo4++fAyO/lB8NammyA13MzvJy8pxvB9gmCJhVPaFzG5yX6Ly8OIsvVDk+qVa5eLCIua1E7WGACUlmkEGljDvzOaBdogMQZ8TGBTqNZbShnFH1WsUxBtJNRtYfeeGjztKTQqqj4WD5atU8dqV/iwmTylpE7wdHZ+38ckuYL9dmUPLh4Li2ZgdY6XniVOBGthY5a2uJ2OFp2xe1WS9KvbYjJ/tH</elem>
+<elem key="fingerprint">c4f8ade8f80477decf150d630a187e49</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBPiFJd2F35NPKIQxKMHrgPzVzoNHOJtTtM+zlwVfxzvcXPFFuQrOL7X6Mi9YQF9QRVJpwtmV9KAtWltmk3qm4oc=</elem>
+<elem key="fingerprint">228fb197bf0f1708fc7e2c8fe9773a48</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIC/RjKhT/2YPlCgFQLx+gOXhC6W3A3raTzjlXQMT8Msk</elem>
+<elem key="fingerprint">e6ac27a3b5a9f1123c34a55d5beb3de9</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+</ports>
+<times srtt="29260" rttvar="16622" to="100000"/>
+</host>
+<runstats><finished time="1692355097" timestr="Fri Aug 18 06:38:17 2023" summary="Nmap done at Fri Aug 18 06:38:17 2023; 1 IP address (1 host up) scanned in 9.11 seconds" elapsed="9.11" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

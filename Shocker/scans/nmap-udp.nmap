@@ -1,0 +1,1 @@
+# Nmap 7.93 scan initiated Fri Aug 18 07:00:50 2023 as: nmap -p- -oA scans/nmap-udp -sU -vv 10.10.10.56

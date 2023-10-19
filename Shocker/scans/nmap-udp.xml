@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.93 scan initiated Fri Aug 18 07:00:50 2023 as: nmap -p- -oA scans/nmap-udp -sU -vv 10.10.10.56 -->
+<nmaprun scanner="nmap" args="nmap -p- -oA scans/nmap-udp -sU -vv 10.10.10.56" start="1692356450" startstr="Fri Aug 18 07:00:50 2023" version="7.93" xmloutputversion="1.05">
+<scaninfo type="udp" protocol="udp" numservices="65535" services="1-65535"/>
+<verbose level="2"/>
+<debugging level="0"/>
+<taskbegin task="Ping Scan" time="1692356450"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.56" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskend task="Ping Scan" time="1692356450" extrainfo="1 total hosts"/>
+<taskbegin task="UDP Scan" time="1692356450"/>
